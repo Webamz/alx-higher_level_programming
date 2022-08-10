@@ -1,0 +1,7 @@
+-- Lists all shows contained in the database hbtn_0d_tvshows.
+-- Displays NULL for shows without genres.
+-- Records are ordered by ascending tv_shows.title and tv_show_genres.genreid.
+SELECT tv_shows.title, tv_show_genres.genre_id
+FROM tv_show_genres
+RIGHT JOIN tv_shows ON tv_show_genres.show_id = tv_shows.id
+ORDER BY tv_shows.title, tv_show_genres.genre_id;
