@@ -90,7 +90,7 @@ class TestSquare_size(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Square(None)
 
-    def test_str_size(self)
+    def test_str_size(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Square("invalid")
 
@@ -403,13 +403,13 @@ class TestSquare_stdout(unittest.TestCase):
 
     def test_display_size_y(self):
         s = Square(4, 0, 1, 9)
-        capture = TestSquare_stdout.capture_stdout(s, "display"
+        capture = TestSquare_stdout.capture_stdout(s, "display")
         display = "\n####\n####\n####\n####\n"
         self.assertEqual(display, capture.getvalue())
 
     def test_display_size_x_y(self):
         s = Square(2, 3, 2, 1)
-        capture = TestSquare_stdout.capture_stdout(s, "display"
+        capture = TestSquare_stdout.capture_stdout(s, "display")
         display = "\n\n   ##\n   ##\n"
         self.assertEqual(display, capture.getvalue())
 
@@ -436,7 +436,7 @@ class TestSquare_update_args(unittest.TestCase):
     def test_update_args_two(self):
         s = Square(10, 10, 10, 10)
         s.update(89, 2)
-        self.assertEqual("[Square] (89) 10/10 - 2", str(s)
+        self.assertEqual("[Square] (89) 10/10 - 2", str(s))
 
     def test_update_args_three(self):
         s = Square(10, 10, 10, 10)
