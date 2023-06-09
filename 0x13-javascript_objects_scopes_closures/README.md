@@ -1,1 +1,0 @@
-javscript object, scopes, closures
