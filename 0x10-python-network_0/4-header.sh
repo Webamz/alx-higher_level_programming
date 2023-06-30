@@ -1,4 +1,3 @@
 #!/bin/bash
-# takes in a URL as an argument, sneds a GET request 
-# and displays the body of the response
-curl -sH "X-School-User_Id: 98" "$1"
+# script that takes in a URL as an argument, sends a GET request to the URL
+curl -sH "X-School-User-Id: 98" "$1"
